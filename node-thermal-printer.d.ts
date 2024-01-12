@@ -10,7 +10,8 @@ declare enum PrinterTypes {
   EPSON = "epson",
   TANCA = "tanca",
   STAR = "star",
-  DARUMA = "daruma"
+  DARUMA = "daruma",
+  SAM4S = "sam4s"
 }
 
 declare enum BreakLine {
@@ -186,7 +187,7 @@ declare class ThermalPrinter {
 
   /**
    * Set text upside down
-   * @param Boolean is enabled 
+   * @param Boolean is enabled
    */
   upsideDown(enabled: boolean): void;
 

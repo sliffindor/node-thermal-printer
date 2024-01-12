@@ -3,11 +3,12 @@ const Types = require('../node-thermal-printer').types;
 
 async function testConnection() {
   const printer = new ThermalPrinter({
-    type: Types.EPSON,
+    type: Types.SAM4S,
     interface: process.argv[2],
   });
 
   printer.beep();
+  console.info("??");
 
   try {
     const status = await printer.execute();
