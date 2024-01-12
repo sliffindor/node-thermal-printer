@@ -269,7 +269,7 @@ declare class ThermalPrinter {
    * @param String left side text
    * @param String right side text
   */
-  leftRight(left: string, right: string): void;
+  leftRight(left: string, right: string, currentSize: number): void;
 
   /**
    * Insert table of data (width split equally)
